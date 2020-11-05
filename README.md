@@ -99,14 +99,13 @@ Treatment contact matrix file. The input file could be
 separated list (no spaces around commas, e.g., -t
 A,B,C).
 
-**-c CONTROL, --control CONTROL**
-
+**`-c CONTROL, --control CONTROL`**  
 Control contact matrix file. Must be in the same
 format/resolution as the treatment matrix. Multiple
 samples can be provided as comma separated list (no
 spaces around commas, e.g., -c A,B,C). 
 
-**-f {hicpro,hic,cool}, --fileFormat {hicpro,hic,cool}**
+**`-f {hicpro,hic,cool}, --fileFormat {hicpro,hic,cool}**
 
 Format of the input matrix files. The following
 options are available: "hicpro", "hic" or "cool". If
