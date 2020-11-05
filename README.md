@@ -91,63 +91,54 @@ tar zxf bart3d_test_data.tar.gz
 
 ### Essential options
 
-**-t TREATMENT, --treatment TREATMENT**
-
+**`-t TREATMENT, --treatment TREATMENT`**  
 Treatment contact matrix file. The input file could be
 .matrix file from HiC-Pro, .hic file from Jurcer, or
 .cool file. Multiple samples can be provided as comma
 separated list (no spaces around commas, e.g., -t
 A,B,C).
 
-**`-c CONTROL, --control CONTROL`**  
+**`-c CONTROL, --control CONTROL`**    
 Control contact matrix file. Must be in the same
 format/resolution as the treatment matrix. Multiple
 samples can be provided as comma separated list (no
 spaces around commas, e.g., -c A,B,C). 
 
-**`-f {hicpro,hic,cool}, --fileFormat {hicpro,hic,cool}**
-
+**`-f {hicpro,hic,cool}, --fileFormat {hicpro,hic,cool}`**  
 Format of the input matrix files. The following
 options are available: "hicpro", "hic" or "cool". If
 use "hicpro", additional abs/ord .bed file need to be
 provided through --bedFileHicpro.
 
-**-s {hg38,mm10}, --species {hg38,mm10}**
-
+**`-s {hg38,mm10}, --species {hg38,mm10}`**  
 Species, please choose from "hg38" or "mm10".
 
-**--genomicDistance GENOMICDISTANCE**
-
+**`--genomicDistance GENOMICDISTANCE`**  
 Genomic flanking regions for detecting differential
 chromatin interactions. Default: 200000 (in bp).
 
-**--bedFileHicpro BEDFILEHICPRO**
-
+**`--bedFileHicpro BEDFILEHICPRO`**  
 For .hicpro format, please provide the abs/ord .bed
 file from HiC-Pro. NOTES: for one species and one
 resolution, the HiC-Pro output abs/ord .bed files are
 identical.
 
-**--resolution RESOLUTION**
-
+**`--resolution RESOLUTION`**  
 For .hic format, please specify a resolution. Default:
 5000 (in bp).
 
-**--nonorm**              
-
+**`--nonorm`**                
 Whether or not do the standardization for each TF by
 all of its Wilcoxon statistic scores in our
 compendium. If set, BART3D will not do the
 normalization. Default: FALSE.
 
-**--outdir OUTDIR**       
-
+**`--outdir OUTDIR`**         
 If specified, all output files will be written to that
 directory. Default: bart3d_output under the current
 working directory
 
-**--outFileName OUTFILENAME**
-
+**`--outFileName OUTFILENAME`**  
 Name string of the output files. Default: joint
 basename of the first treatment/control files.
 
