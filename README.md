@@ -80,10 +80,29 @@ export PATH="/path/to/bart3d/bin/:$PATH"
 
 ### Download the test data 
 The test data can be downloaded here:
-
+<!---
 ```shell
 wget https://www.dropbox.com/s/3ghxmk9b6o3ak89/bart3d_test_data.tar.gz?dl=0 -O bart3d_test_data.tar.gz
 tar zxf bart3d_test_data.tar.gz 
+```
+--->
+
+- For hicpro input
+```shell
+wget https://www.dropbox.com/s/wfrjwm5pq2k6qo3/bart3d_test_data_hicpro_input.tar.gz?dl=0 -O bart3d_test_data_hicpro_input.tar.gz
+tar zxf bart3d_test_data_hicpro_input.tar.gz
+```
+
+- For .hic input
+```shell
+wget https://www.dropbox.com/s/727gtfih44zcrxy/bart3d_test_data_juicer_input.tar.gz?dl=0 -O bart3d_test_data_juicer_input.tar.gz
+tar zxf bart3d_test_data_juicer_input.tar.gz
+```
+
+- For .cool input
+```shell
+wget https://www.dropbox.com/s/gvtwug9qp52sps8/bart3d_test_data_cool_input.tar.gz?dl=0 -O bart3d_test_data_cool_input.tar.gz
+tar zxf bart3d_test_data_cool_input.tar.gz
 ```
 
 
